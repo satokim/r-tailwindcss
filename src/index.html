@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>TailWindCSS Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="font-poppins bg-body text-white">
+    <!-- NavigationBar -->
+    <header class="py-6">
+      <div
+        class="container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-24 w-full"
+      >
+        <div class="text-3xl font-bold">UskCode.com</div>
+        <div class="space-x-12 hidden lg:flex items-center">
+          <a
+            href="#home"
+            class="hover:text-selected-text transition-all duration-300"
+            >Home</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:text-selected-text transition-all duration-300"
+            >Portfolio</a
+          >
+          <a
+            href="#skills"
+            class="hover:text-selected-text transition-all duration-300"
+            >skills</a
+          >
+          <a href="#contact">
+            <button
+              class="px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-500 transition-all duration-300"
+            >
+              Contact
+            </button>
+          </a>
+        </div>
+
+        <div class="lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div
+      id="home"
+      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <div class="flex flex-wrap md:flex-nowrap">
+        <div
+          class="md:my-36 lg:ml-20 flex flex-wrap justify-center md:justify-start max-w-xl"
+        >
+          <h1
+            class="font-bold text-5xl text-center md:text-left lg:text-7xl md:text-6xl"
+          >
+            Make a awasome <br />
+            webseite <br />
+            use a TailWindCSS
+          </h1>
+          <button
+            class="px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-500 transition-all duration-300 mt-10"
+          >
+            <i class="fa-solid fa-rocket mr-1"></i>
+            <span>More</span>
+          </button>
+        </div>
+        <img
+          src="./images/human.jpg"
+          alt="human"
+          class="md:absolute lg:top-2 lg:right-52 md:w-3/5 w-10/12 mt-12 md:mt-0 right-6 mx-auto -z-10 lg:w-3/6"
+        />
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div
+      id="portfolio"
+      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section class="w-full">
+        <h2 class="secondary-title">My Portfolio</h2>
+        <p class="section-paragraph">
+          This is the web application I have built.
+        </p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          <img
+            src="./images/portfolio1.jpg"
+            alt=""
+            class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+          />
+          <img
+            src="./images/portfolio2.jpg"
+            alt=""
+            class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+          />
+          <img
+            src="./images/portfolio3.jpg"
+            alt=""
+            class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+          />
+          <img
+            src="./images/portfolio4.jpg"
+            alt=""
+            class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+          />
+          <img
+            src="./images/portfolio5.jpg"
+            alt=""
+            class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+          />
+          <img
+            src="./images/portfolio6.jpg"
+            alt=""
+            class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- Skils -->
+    <div
+      id="skills"
+      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section class="w-full">
+        <h2 class="secondary-title">Skill Staks</h2>
+        <p class="section-paragraph">This is skill list</p>
+
+        <!-- Javascript -->
+        <div class="my-16">
+          <div
+            class="w-full border border-purple-50 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-purple-300 transition-all duration-300 cursor-pointer"
+          >
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-brands fa-js-square text-9xl text-yellow-300"></i>
+            </div>
+
+            <!-- Skill description -->
+            <div
+              class="text-center flex flex-wrap justify-center lg:text-left lg:block"
+            >
+              <h3 class="text-3xl font-semibold">Javascript</h3>
+              <div
+                class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8"
+              >
+                <div class="badge">Create web site</div>
+                <div class="badge">Frontend developer</div>
+              </div>
+              <p class="text-secondary">
+                Javascript Engeneer usually react framework
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phython -->
+        <div class="my-16">
+          <div
+            class="w-full border border-purple-50 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-purple-300 transition-all duration-300 cursor-pointer"
+          >
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-brands fa-python text-9xl text-blue-600"></i>
+            </div>
+
+            <!-- Skill description -->
+            <div
+              class="text-center flex flex-wrap justify-center lg:text-left lg:block"
+            >
+              <h3 class="text-3xl font-semibold">Python</h3>
+              <div
+                class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8"
+              >
+                <div class="badge">AI/DX</div>
+                <div class="badge">Data Engeneer</div>
+              </div>
+              <p class="text-secondary">Python Engeneer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phython -->
+        <div class="my-16">
+          <div
+            class="w-full border border-purple-50 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-purple-300 transition-all duration-300 cursor-pointer"
+          >
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-brands fa-html5 text-9xl text-orange-400"></i>
+            </div>
+
+            <!-- Skill description -->
+            <div
+              class="text-center flex flex-wrap justify-center lg:text-left lg:block"
+            >
+              <h3 class="text-3xl font-semibold">HTML/CSS</h3>
+              <div
+                class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8"
+              >
+                <div class="badge">UI/UX</div>
+                <div class="badge">Make a homepage</div>
+              </div>
+              <p class="text-secondary">HTML/CSS Engeneer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact -->
+    <div
+      id="contact"
+      class="container mt-52 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section class="w-full">
+        <h2 class="secondary-title">Contact</h2>
+        <p class="section-paragraph">Contact me</p>
+        <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
+          <!-- Left -->
+          <div class="space-y-12">
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="w-full border border-inputBorder bg-input px-4 py-4"
+              />
+            </div>
+
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="w-full border border-inputBorder bg-input px-4 py-4"
+              />
+            </div>
+
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold"
+                >Content</label
+              >
+              <input
+                type="text"
+                class="w-full border border-inputBorder bg-input px-4 py-4"
+              />
+            </div>
+
+            <button
+              class="px-8 py-3 bg-theme font-bold rounded-lg hover:bg-purple-500 transition-all duration-300"
+            >
+              Send
+            </button>
+          </div>
+
+          <!-- Right -->
+          <div>
+            <p class="text-secondary">000-0000-0000</p>
+            <a href="mailto:usksty@gmail.com">usksty@gmail.com</a>
+            <!-- sns -->
+            <div class="mt-20 space-x-6">
+              <a href="#">
+                <i class="fa-brands fa-twitter text-3xl text-blue-400"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-facebook text-3xl text-blue-600"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram text-3xl text-pink-400"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
